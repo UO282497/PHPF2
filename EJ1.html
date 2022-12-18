@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>Ejercicio7</title>
+    <!--Metadatos de los documentos HTML5-->
+    <meta name="author" content="Sergio">
+    <meta name="description" content="Ejercicio7">
+
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="ejercicio7.css">
+</head>
+
+<body>
+    <h1>Simulador de rally</h1>
+    <nav>
+        <h2>Menú de navegación</h2>
+        <ul>
+            <li><a href="#1" accesskey="A" tabindex="1">Creación de la base de datos</a> </li>
+            <li><a href="#2" accesskey="B" tabindex="2">Creación de tabla e inicialización de datos</a> </li>
+            <li><a href="#3" accesskey="C" tabindex="3">Simulador de tiempos</a> </li>
+            <li><a href="#4" accesskey="D" tabindex="4">Ver pilotos</a> </li>
+            <li><a href="#5" accesskey="E" tabindex="5">Ver etapas</a> </li>
+            <li><a href="#6" accesskey="f" tabindex="6">Ver tiempos</a> </li>
+        </ul>
+    </nav>
+    <h1>Panel de opciones de la base de datos</h1>
+    <form action="#" method="post" name="rally" enctype="multipart/form-data">
+        <section id="1">
+            <h2>Crear Base de datos</h2>
+            <input type="submit" name="crearbd" value="Crear Base de Datos" title="Crear Base de Datos">
+        </section>
+        <section id="2">
+            <h2>Crear tablas y cargar datos iniciales</h2>
+            <input type="submit" name="create" value="Crear una tabla" title="Crear las tablas e incializar datos">
+        </section>
+        <section id="3">
+            <h2>Simular tiempos de etapa</h2>
+            <label for="idpiloto">Id del piloto: </label>
+            <p><input type="text" id="idpiloto" name="idpiloto"></p>
+            <label for="idetapa">Id de la etapa: </label>
+            <p><input type="text" id="idetapa" name="idetapa"></p>
+            <input type="submit" name="insert" value="Cronometrar tiempo" title="Cronometrar tiempo">
+        </section>
+
+
+
+
+    </form>
+    <main>
+        <p>
+        </p>
+        <section id="4">
+            <h2>Visualizador de pilotos</h2>
+            <p>Pilotos disponibles: </p>
+            <p>Número de pilotos = 2</p>
+            <ul>
+                <li>id - nombre - apellidos</li>
+                <li>1 - Collin - Mcrae</li>
+                <li>2 - Carlos - Sainz</li>
+            </ul>
+        </section>
+        <section id="5">
+            <h2>Visualizador de etapas</h2>
+            <p>Etapas disponibles: </p>
+            <p>Número de etapas = 2</p>
+            <ul>
+                <li>id - nombre - espectadores</li>
+                <li>1 - Etapa-1-WRC - 420</li>
+                <li>2 - Etapa-2-WRC - 235</li>
+            </ul>
+        </section>
+        <section id="6">
+            <h2>Visualizador de tiempos</h2>
+            <p>Tiempos disponibles: </p>
+            <p>Número de tiempos = 2</p>
+            <ul>
+                <li>piloto - etapa - tiempo</li>
+                <li>1 - 1 - 3:35:24.727</li>
+                <li>1 - 1 - 3:48:13.967</li>
+            </ul>
+        </section>
+        <p></p>
+    </main>
+
+
+</body>
+
+</html>
